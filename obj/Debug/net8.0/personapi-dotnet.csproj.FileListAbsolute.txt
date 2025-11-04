@@ -297,3 +297,4 @@ C:\Users\juand\Downloads\personapi-dotnet\personapi-dotnet\bin\Debug\net8.0\tr\M
 C:\Users\juand\Downloads\personapi-dotnet\personapi-dotnet\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\juand\Downloads\personapi-dotnet\personapi-dotnet\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\juand\Downloads\personapi-dotnet\personapi-dotnet\obj\Debug\net8.0\personapi-dotnet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\juand\Downloads\personapi-dotnet\personapi-dotnet\obj\Debug\net8.0\personapi-dotnet.sourcelink.json

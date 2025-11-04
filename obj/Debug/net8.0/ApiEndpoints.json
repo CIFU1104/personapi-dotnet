@@ -1,5 +1,99 @@
 [
   {
+    "ContainingType": "personapi_dotnet.Controllers.Api.EstudiosController",
+    "Method": "GetAll",
+    "RelativePath": "api/Estudios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.EstudiosController",
+    "Method": "Create",
+    "RelativePath": "api/Estudios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "personapi_dotnet.Models.Entities.estudio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.EstudiosController",
+    "Method": "GetById",
+    "RelativePath": "api/Estudios/{idProf}/{ccPer}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.EstudiosController",
+    "Method": "Update",
+    "RelativePath": "api/Estudios/{idProf}/{ccPer}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "e",
+        "Type": "personapi_dotnet.Models.Entities.estudio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.EstudiosController",
+    "Method": "Delete",
+    "RelativePath": "api/Estudios/{idProf}/{ccPer}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "personapi_dotnet.Controllers.Api.PersonaController",
     "Method": "GetAll",
     "RelativePath": "api/Persona",
@@ -73,6 +167,164 @@
       {
         "Name": "cc",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.ProfesionController",
+    "Method": "GetAll",
+    "RelativePath": "api/Profesion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.ProfesionController",
+    "Method": "Create",
+    "RelativePath": "api/Profesion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "personapi_dotnet.Models.Entities.profesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.ProfesionController",
+    "Method": "GetById",
+    "RelativePath": "api/Profesion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.ProfesionController",
+    "Method": "Update",
+    "RelativePath": "api/Profesion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "p",
+        "Type": "personapi_dotnet.Models.Entities.profesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.ProfesionController",
+    "Method": "Delete",
+    "RelativePath": "api/Profesion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.TelefonoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Telefono",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.TelefonoController",
+    "Method": "Create",
+    "RelativePath": "api/Telefono",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "t",
+        "Type": "personapi_dotnet.Models.Entities.telefono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.TelefonoController",
+    "Method": "GetById",
+    "RelativePath": "api/Telefono/{num}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.TelefonoController",
+    "Method": "Update",
+    "RelativePath": "api/Telefono/{num}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "t",
+        "Type": "personapi_dotnet.Models.Entities.telefono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.Api.TelefonoController",
+    "Method": "Delete",
+    "RelativePath": "api/Telefono/{num}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
