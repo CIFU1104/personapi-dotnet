@@ -31,13 +31,13 @@ Cada entidad cuenta con un CRUD completo accesible a través de la API REST y pr
 
 ## Configuración de la base de datos
 
-1. Crear la base de datos en SQL Server:
+1. Crear la base de datos en SQL Server (ddl.sql):
    ```sql
    CREATE DATABASE persona_db;
    GO
    ```
 
-2. Ejecutar el script persona_ddl_mysql.sql o el correspondiente DDL que crea las tablas:
+2. Ejecutar el script ddl.sql o el correspondiente DDL que crea las tablas:
    - persona
    - profesion
    - telefono
@@ -53,7 +53,7 @@ Cada entidad cuenta con un CRUD completo accesible a través de la API REST y pr
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/<tu-usuario>/personapi-dotnet.git
+   git clone https://github.com/CIFU1104/personapi-dotnet.git
    cd personapi-dotnet
    ```
 
@@ -65,13 +65,14 @@ Cada entidad cuenta con un CRUD completo accesible a través de la API REST y pr
      }
    }
    ```
+   Reemplazar JUAN_CIFUENTES con el usuario del sistema, tambien verificar si debe ir SQLEXPRESS o SQLEXPRESS01, dependiendo de como se haya instalado el SQL SERVER 
 
 3. Instala los paquetes NuGet:
    ```powershell
-   Install-Package Microsoft.EntityFrameworkCore -Version 7.0.20
-   Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 7.0.20
-   Install-Package Microsoft.EntityFrameworkCore.Tools -Version 7.0.20
-   Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design -Version 7.0.11
+   Install-Package Microsoft.EntityFrameworkCore 
+   Install-Package Microsoft.EntityFrameworkCore.SqlServer 
+   Install-Package Microsoft.EntityFrameworkCore.Tools 
+   Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design 
    ```
 
 ## Generación de entidades con Scaffold
@@ -81,6 +82,8 @@ El modelo de datos se generó desde la base de datos con el siguiente comando:
 ```powershell
 Scaffold-DbContext "Server=JUAN_CIFUENTES\SQLEXPRESS01;Database=persona_db;Trusted_Connection=True;TrustServerCertificate=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Entities -ContextDir Data -Context PersonaDbContext -UseDatabaseNames -Force
 ```
+Reemplazar JUAN_CIFUENTES con el usuario del sistema, tambien verificar si debe ir SQLEXPRESS o SQLEXPRESS01, dependiendo de como se haya instalado el SQL SERVER 
+
 
 Esto crea:
 ```
